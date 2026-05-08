@@ -1,0 +1,5 @@
+1. **Identificar y agrupar transacciones**: Se implementó una lógica de agrupación, agrupando por vendedor, veterinaria, doctora, fecha, hora (en intervalos de 15 mins) y movimiento en la función `agruparTransacciones`.
+2. **Actualizar el historial de ventas**: Se modificó `rHist` en `index_1_corregido.html` para usar la función de agrupación. El historial ahora muestra la lista agrupada en lugar de mostrar filas individuales, agregando datos como "X productos" en lugar del nombre único de un producto, la suma total, y la cantidad total.
+3. **Implementar Detalle para grupos (`verDetalleGrupo`)**: Se añadió un nuevo modal o lógica para mostrar el detalle de todas las ventas correspondientes a un grupo. Al dar clic en un grupo, se muestran en una tabla los diferentes productos vendidos y un total global.
+4. **Permitir anulación múltiple (`anularGrupo`)**: Se adaptó la función `anularVenta` y el modal de confirmación `abrirConfirmAnular` para soportar la anulación de varias transacciones simultáneamente.
+5. **Completar pasos de Pre-commit**: Como siempre, finalizar con los pasos de precommit para verificar el código.
